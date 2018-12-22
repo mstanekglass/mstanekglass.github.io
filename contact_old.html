@@ -174,22 +174,34 @@
 
                                     <div id="message"></div>
 
-                                    <form method="POST" action="https://formspree.io/mstanekglass@gmail.com">
-                                      <label>Your name: <span>*</span>
-                                      <input type="name" name="name" placeholder="Your name">
-                                      </label>
-                                      <label>Your contact email: <span>*</span>
-                                       <input type="email" name="email" placeholder="Your contact email">
-                                       </label>
-                                       <div class="clearfix"></div>
-                                       <label>Inquiries, questions, or comments:
-                                      <textarea name="message" placeholder="Your message here"></textarea>
-                                      </label>
+                                    <form method="post" action="php/contactfrom.php" name="cform" id="cform">
+
+                                    	<label>Your name: <span>*</span>
+
+                                        	<input  name="name" id="name" type="text">
+
+                                        </label>
+
+                                        <label>Your contact email: <span>*</span>
+
+                                        	<input  name="email" id="email" type="email">
+
+                                        </label>
+
+                                        <div class="clearfix"></div>
+
+                                        <label>Inquiries, questions, or comments:
+
+                                        	<textarea name="comments" id="comments" cols="" rows=""></textarea>
+
+                                        </label>
+
                                         <div class="clearfix"></div>
 
                                         <input name="" type="submit" value="Send Mail">
 
-                                      <div id="simple-msg"></div>
+                                    	<div id="simple-msg"></div>
+
                                     </form>
 
                                 </div>
